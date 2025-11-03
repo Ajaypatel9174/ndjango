@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/style.css'%}">
+{% endblock css %}
+
+{% block title %}
+<title> landing</title>
+{% endblock title %}
+
+{% block content %}
+
+<h1 class="new1">landing</h1>
+<img src="{% static 'images/road.jpeg' %}" alt="">
+
+
+<audio  controls  >
+    <source src="{% static 'audio/dm.mp3' %}" type="audio/mp3">
+
+</audio>
+
+
+<video width="300px"  height="200px" controls>
+
+    <source src=" {% static 'vedio/nat1.mp4' %}" type="vedio/mp4">
+
+</video>
+
+
+
+
+{% endblock content %}

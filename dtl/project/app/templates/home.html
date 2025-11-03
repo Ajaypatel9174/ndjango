@@ -1,0 +1,36 @@
+{{name}} <br>
+{{email}} <br>
+
+{% for i in name %}
+
+{{i}} <br>
+
+
+{% endfor  %}
+
+{% for i in l %}
+
+{{forloop.revcounter0}}.{{i}} <br>
+
+{% endfor  %}
+
+{% if name %}
+
+welcome {{name}} <br>
+
+{% else %}
+
+welcome Guest
+
+{% endif  %}
+
+{% with x=age  %}
+
+{{x|add:'11'}}
+
+{% endwith %}
+
+
+
+
+

@@ -1,0 +1,40 @@
+<form action="{% url 'form1' %}" enctype="multipart/form-data" method="post">
+ {% csrf_token %}
+    <label for="">name
+    <input type="text" name="name" id="">
+
+    </label> <br><br>
+
+       <label for="">email
+    <input type="email" name="email" id="">
+
+    </label> <br><br>
+     
+
+
+       <label for="">number
+    <input type="number" name="number" id="">
+
+    </label> <br><br>
+     
+
+       <label for="">photo
+    <input  type="file" name="image" id="" accept="jpg">
+
+    </label> <br><br>
+
+     <label for="">video
+    <input  type="file" name="video" id="" accept="mp4" >
+
+    </label> <br><br>
+
+     <label for="">audio
+    <input  type="file" name="audio" id=""  accept="mp3">
+
+    </label> <br><br>
+     
+     
+     <button  type="submit">submit</button>
+
+
+</form>
